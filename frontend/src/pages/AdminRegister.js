@@ -49,7 +49,7 @@ const AdminRegister = () => {
       // Remove confirmPassword before sending to API
       const { confirmPassword, ...dataToSend } = formData;
       
-      const response = await axios.post("http://78.47.124.12/api/admins/register", dataToSend);
+      const response = await axios.post("https://refoodbackned.duckdns.org//api/admins/register", dataToSend);
       
       if (response.data.success) {
         setSuccess("Un code de vérification a été envoyé à votre email.");
@@ -70,7 +70,7 @@ const AdminRegister = () => {
     setSuccess("");
 
     try {
-      const response = await axios.post("http://78.47.124.12/api/admins/verify", {
+      const response = await axios.post("https://refoodbackned.duckdns.org//api/admins/verify", {
         userId: tempUserId,
         code: verificationCode,
       });

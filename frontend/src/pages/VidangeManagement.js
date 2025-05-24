@@ -76,7 +76,7 @@ const VidangeManagement = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://78.47.124.12/api/vidanges', {
+      const response = await axios.post('https://refoodbackned.duckdns.org//api/vidanges', {
         ...formData,
         car_id: carId
       });

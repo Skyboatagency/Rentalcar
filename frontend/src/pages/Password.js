@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 
-const API_URL = process.env.REACT_APP_API_URL; // Ex: http://78.47.124.12/api
+const API_URL = process.env.REACT_APP_API_URL; // Ex: https://refoodbackned.duckdns.org//api
 
 const Password = () => {
   const [oldPassword, setOldPassword] = useState("");
