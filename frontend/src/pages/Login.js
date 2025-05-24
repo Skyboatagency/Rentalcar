@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL;
+// const API_URL = process.env.REACT_APP_API_URL;
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -76,7 +76,7 @@ const Login = () => {
     setLoading(true);
 
     try {
-      const response = await axios.post(`${API_URL}/admins/login`, {
+      const response = await axios.post(`/api/admins/login`, {
         nom: formData.nom,
         password: formData.password
       });
