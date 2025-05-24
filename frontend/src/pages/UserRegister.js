@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 
-const API_URL = process.env.REACT_APP_API_URL; // Exemple: http://localhost:5000/api
+const API_URL = process.env.REACT_APP_API_URL; // Exemple: http://http://78.47.124.12/api
 
 const UserRegister = () => {
   const [formData, setFormData] = useState({

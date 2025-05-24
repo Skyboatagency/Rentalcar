@@ -76,7 +76,7 @@ const VidangeManagement = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/vidanges', {
+      const response = await axios.post('http://http://78.47.124.12/api/vidanges', {
         ...formData,
         car_id: carId
       });

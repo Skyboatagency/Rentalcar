@@ -68,3 +68,6 @@ app.listen(PORT, HOST, async () => {
     console.error('❌ Erreur lors du démarrage du serveur:', error);
   }
 });
+
+module.exports = app;
+
